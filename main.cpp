@@ -33,6 +33,18 @@ namespace second {
         std::cout << x << " lost precision " << std::endl;
     }
 
+    void ExplicitConversion(){
+        double x = (int) 3.14; // explicit conversion of a double into an int
+        std::cout << x << " explicit conversion " << std::endl;
+    }
+
+    void AsciiCast(){
+        char x = 100;
+        std::cout << x << ": implicit" << std::endl; // Implicit will be cast as a ascii character 'd';
+        std::cout << (char)101 << ": explicit conversion" << std::endl; // Implicit will be cast as a ascii character 'd';
+
+    }
+
 }
 
 int main() {
@@ -40,5 +52,8 @@ int main() {
     first::Modulus();
     second::ImplicitConversion();
     first::ImplicitConversion();
+    second::ExplicitConversion();
+    second::AsciiCast();
+
     return 0;
 }
