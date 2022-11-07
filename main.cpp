@@ -9,6 +9,7 @@ namespace first {
             auto remainder = intx % i;
             std::cout << remainder << " divided by: " << i << std::endl;
         }
+        std::
     }
 
     void ImplicitConversion() {
@@ -40,7 +41,7 @@ namespace second {
 
     void AsciiCast(){
         char x = 100;
-        std::cout << x << ": implicit" << std::endl; // Implicit will be cast as a ascii character 'd';
+        std::cout << x << ": implicit conversion" << std::endl; // Implicit will be cast as a ascii character 'd';
         std::cout << (char)101 << ": explicit conversion" << std::endl; // Implicit will be cast as a ascii character 'd';
 
     }
